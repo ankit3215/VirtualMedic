@@ -1,0 +1,15 @@
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.articles {
+  display: block;
+}
+.healthcards {
+  display: grid;
+  width: fit-content;
+  height: auto;
+}
+.card-img-top {
+  height: 8cm;
+}

@@ -32,7 +32,7 @@ function Schedule(props) {
     const CustomInput = ({ value, onClick }) => (
         <Input type="day" placeholder="mm/dd/yyy"
                 name="day"
-                color="white"
+                color="black"
                 onClick={onClick}
                 onChange={handleChange}
                 value={value}/>
@@ -125,13 +125,14 @@ function Schedule(props) {
     <Container>
     <Box 
     padding="4"  
-    bgGradient="linear(to-r,blue.900,gray.500,blue.900)" 
+    bgColor="white"
+    boxShadow="dark-lg"
     borderRadius="lg" 
-    color="white" 
+    color="black" 
     maxW="3xl"> 
-      <Heading  color="white" as="h2" size="xl" fontSize={{ base: "16px", md: "20px", lg: "30px" }} padding="3">Schedule your Appointment</Heading>
+      <Heading  color="black" as="h3" size="xl" fontSize={{ base: "16px", md: "20px", lg: "30px" }} padding="3">Schedule your Appointment</Heading>
       <FormControl isRequired>
-              <FormLabel color="white">Select day</FormLabel>
+              <FormLabel color="black">Select day</FormLabel>
               <DatePicker id="day" name="day"
                     dateFormat="MM/dd/yyyy"
                     selected={startDate}
@@ -139,8 +140,8 @@ function Schedule(props) {
                     onChange={date => {setStartDate(date); setFormState({...formState, day: date.toLocaleDateString("en-US")});}}
                     customInput={<CustomInput/>}
                 />
-              <FormLabel color="white">Time (Hr)</FormLabel>
-              <Select placeholder="Select option" id="time" name="time"  onChange={handleChange} focusBorderColor="blue" color="white" borderColor="blue">
+              <FormLabel color="black">Time (Hr)</FormLabel>
+              <Select placeholder="Select option" id="time" name="time"  onChange={handleChange} focusBorderColor="blue" color="black" borderColor="blue">
                     <option value="12:00pm">12:00pm</option>
                     <option value="2:00pm">2:00pm</option>
                     <option value="4:00pm">4:00pm</option>
@@ -148,18 +149,18 @@ function Schedule(props) {
                  { ok ?
                   <Box>
                     <Text  padding="3"></Text>
-                      <Text color="white" fontSize="sm">An email was sent with the information below </Text>
+                      <Text color="black" fontSize="sm">An email was sent with the information below </Text>
                       <Box borderRadius="md">
-                          <Text color="white" fontSize="sm">Day: {formState.day} </Text>
-                          <Text color="white" fontSize="sm">Time: {formState.time}</Text>
-                          <Text color="white" fontSize="sm">Link: <a href={aLink} target="_blank" rel="noreferrer">{aLink}</a></Text>
+                          <Text color="black" fontSize="sm">Day: {formState.day} </Text>
+                          <Text color="black" fontSize="sm">Time: {formState.time}</Text>
+                          <Text color="black" fontSize="sm">Link: <a href={aLink} target="_blank" rel="noreferrer">{aLink}</a></Text>
                       </Box>   
                   </Box>
                   : null
                  }         
             <Button
                     mt={4}
-                    colorScheme="teal"
+                    colorScheme="blue"
                     type="submit"
                     onClick={handleFormSubmit}
             >

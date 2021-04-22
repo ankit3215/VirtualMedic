@@ -1,5 +1,5 @@
 {
-  "name": "lunar-video-app",
+  "name": "VIRTUALMEDIC",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,21 +8,24 @@
     "start:prod": "cd server && npm start",
     "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
-    "seed": "cd server && npm run seed",
-    "heroku-postbuild": "cd client && npm run build"
+    "seed": "cd server && npm run seed"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rogers0404/lunar-video-app.git"
+    "url": ""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rogers0404/lunar-video-app/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/rogers0404/lunar-video-app#readme",
+  "homepage": "",
   "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "gh-pages": "^3.1.0",
+    "gridjs": "^3.4.0",
+    "gridjs-react": "^3.4.0",
     "if-env": "^1.0.4",
     "jwt-decode": "^3.1.2",
     "react-calendar": "^3.3.1"

@@ -1,9 +1,10 @@
 import React from "react";
 import { Container, Text, Heading, Box, Center } from "@chakra-ui/react";
+import logo from './virtualmediclogo.png';
+import "./home.css";
 
 
 
-// Sample card from Airbnb
 
 
 // fontSize={{ base: "20px", md: "34px", lg: "40px" }}padding="3" margin="0 0 20px 0"
@@ -14,31 +15,95 @@ const Home = () => {
 
 return (
 
-  <Container maxW="xl" centerContent>
+  //<Container maxW="xl" centerContent>
       <Center>
         <Box 
-        padding="4"  
-        bgGradient="linear(to-r,blue.900,gray.500,blue.900)" 
+        padding="6"  
+        bgColor="white"
+        boxShadow="dark-lg"
         borderRadius="lg" 
-        color="white" 
-        maxW="3xl"> 
+        color="black" 
+        maxW="3xl"
+        width="100%"
+        > 
 
-        <Heading as="h1" size="xl" mb="5" >
+        <Heading as="h1" size="xl" mb="5" color="grey" >
           <Center>
-        Welcome to
-        Lunar⚕️Doctor
+            
+           Welcome to
+        
+        
           </Center>
         </Heading>
+        <Center>
+        <img src={logo} width="180" height=""/>
+        </Center>
           
-        <Text fontSize="xl" as="i">
+        <div className="text">
+        <Text fontSize="xl" > 
           <Center>
-        Visit your Doctor from Anywhere!
+            Visit your Doctor from Anywhere! 24/7 Consultation.
           </Center>
         </Text>
         
+        </div>
+
+        <div className="text">
+        <Text fontSize="lg" color="grey" > 
+          <Center>
+            Get Instant Medical help in Just three steps. As Simple as 1,2,3
+            
+          </Center>
+        </Text>
+        
+        </div>
+        <div className="cardcontainer">
+        <div class="card">
+          
+          <div class="card__cover cover1">
+              
+          </div>
+
+          
+          <div class="card__content">
+             <Center>Signup</Center> 
+          </div>
+          
+         </div>
+
+
+         <div class="card">
+          
+          <div class="card__cover cover2">
+              
+          </div>
+
+          
+          <div class="card__content">
+             <Center>Schedule a Video Call</Center> 
+          </div>
+          
+         </div>
+
+         <div class="card">
+          
+          <div class="card__cover">
+              
+          </div>
+
+          
+          <div class="card__content">
+             <Center>Join the Video Call</Center> 
+          </div>
+          
+         </div>
+        </div>
+
+        
         </Box>
       </Center>
-  </Container>
+  //</Container>
+  
   
 );
 };

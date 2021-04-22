@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useMutation } from '@apollo/react-hooks';
 import Auth from "../../utils/auth";
+import "./signup.css";
 import { ADD_USER } from "../../utils/mutations";
-import { Container, Box, Text, Heading, FormControl, FormLabel, Input, Button } from "@chakra-ui/react";
+import { Container, Box, Text, Heading, FormControl, FormLabel, Input, Button, Center } from "@chakra-ui/react";
 
 
 function Signup(props) {
@@ -32,56 +33,73 @@ function Signup(props) {
   };
 
   return (
-    <Container>
-    <Box 
-    padding="4"  
-    bgGradient="linear(to-r,blue.900,gray.500,blue.900)" 
-    borderRadius="lg" 
-    color="white" 
-    maxW="3xl"> 
-      <Link to="/login">
-        <Text color="white" fontSize="sm">
-              ← Go to Login
-        </Text>       
-      </Link>
+    //<Container>
+    <Center>
+      <Box 
+      className="maindivi"
+      padding="4"  
+      bgColor="white"
+      boxShadow="dark-lg"
+      borderRadius="lg" 
+      color="black"
+      maxW="3xl"> 
+      
+        <div className="leftdivi">
 
-      <Heading  color="white" as="h1" size="2xl"  padding="3">Signup</Heading>
+        </div>
+
+        <div className="rightdivi">
+        <Heading  color="black" as="h6" padding="3" align="center">Signup</Heading>
       <FormControl>
-              <FormLabel color="white">First Name</FormLabel>
+              <FormLabel color="black">First Name</FormLabel>
               <Input type="firstName" placeholder="Your First Name"
                   name="firstName"
                   id="firstName"
-                  color="white"
+                  color="black"
                   onChange={handleChange}/>
-                  <FormLabel color="white">Last Name</FormLabel>
+                  <FormLabel color="black">Last Name</FormLabel>
               <Input type="lastName" placeholder="Your Last Name"
                   name="lastName"
                   id="lastName"
-                  color="white"
+                  color="black"
                   onChange={handleChange}/>
-              <FormLabel color="white">Email address</FormLabel>
+              <FormLabel color="black">Email address</FormLabel>
               <Input type="email" placeholder="youremail@test.com"
                   name="email"
                   id="email"
-                  color="white"
+                  color="black"
                   onChange={handleChange}/>
-              <FormLabel color="white">Password</FormLabel>
+              <FormLabel color="black">Password</FormLabel>
               <Input placeholder="******" type="password"
                   name="password"            
                   id="pwd"
-                  color="white"
+                  color="black"
                   onChange={handleChange} />
             <Button
                 mt={4}
-                colorScheme="teal"
+                width="100%"
+                colorScheme="blue"
                 type="submit"
+                textAlign="center"
                 onClick={handleFormSubmit}
               >
                 Submit
               </Button>
+
+              <Center><Link to="/login">
+                <Text color="blue" fontSize="sm"
+                mt={4}
+                >
+                  Already have an account? <strong>Login</strong>
+                </Text>       
+              </Link>
+              </Center>
       </FormControl>
+        </div>
+     
       </Box>
-    </Container>
+    </Center>
+   // </Container>
 
   );
 

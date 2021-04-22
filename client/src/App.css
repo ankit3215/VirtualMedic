@@ -1,0 +1,9 @@
+.Voice{
+    
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}

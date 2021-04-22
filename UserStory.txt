@@ -7,7 +7,7 @@ SO THAT I can have the link for the telemedice video
 
 Acceptance Criteria
 
-GIVEN a Lunar Video Doctor App
+GIVEN a VirtualMedic Doctor App
 WHEN I load the Video Doctor App
 THEN I am presented with a menu with the options Home, Login, Signup, Schedule for Making an Appointment, Contact and About and a message for Welcome to the App
 WHEN I click on the Home menu option

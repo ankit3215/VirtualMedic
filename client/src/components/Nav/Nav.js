@@ -3,6 +3,7 @@ import React from "react";
 import { Box, Heading, Flex, Text, Button, Link } from "@chakra-ui/react";
 import "./Nav.css";
 import Auth from "../../utils/auth"
+import logo from './virtualmediclogo.png';
 
 const MenuItems = ({ children }) => (
   <Text mt={{ base: 4, md: 0 }} mr={6} display="block">
@@ -22,15 +23,15 @@ const Nav = props => {
       justify="space-between"
       wrap="wrap"
       padding="1.5rem"
-      bgGradient="linear(to-r,blue.900,gray.500,blue.900)"
-      color="white"
+      bgColor="white"
+      color="black"
       borderRadius="sm"
       {...props}
     >
       <Flex align="center" mr={5}>
         <Heading as="h1" size="2xl" letterSpacing={"-.1rem"} >
         <Link href="/">  
-        Lunar⚕️Doctor
+        <img src={logo} width="180" height=""/>
         </Link>
         </Heading>
       </Flex>
@@ -56,7 +57,7 @@ const Nav = props => {
         <MenuItems className="active" >
         {
           Auth.loggedIn() ?
-              <Link href="/myAppointment">My Appointment</Link>
+              <Link href="/Appointment">My Appointment</Link>
                 :
                 null
         }
@@ -74,12 +75,49 @@ const Nav = props => {
         <MenuItems>
         {
           Auth.loggedIn() ?
-          <Link href="/">Sign up</Link>
+          <Link href="/signup">Sign up</Link>
             :
           <Link href="/signup">Sign up</Link>
         }
         </MenuItems>
         
+        
+
+        <MenuItems>
+        {
+          Auth.loggedIn() ?
+          <Link href="/Diagnostics">Diagnostics</Link>
+            :
+          <Link href="/Diagnostics">Diagnostics</Link>
+        }
+        </MenuItems>
+
+        <MenuItems>
+        {
+          Auth.loggedIn() ?
+          <Link href="/Medicines">Medicines</Link>
+            :
+          <Link href="/Medicines">Medicines</Link>
+        }
+        </MenuItems>
+
+        <MenuItems>
+        {
+          Auth.loggedIn() ?
+          <Link href="/HealthArticles">Health Articles</Link>
+            :
+          <Link href="/HealthArticles">Health Articles</Link>
+        }
+        </MenuItems>
+        <MenuItems>
+        {
+          Auth.loggedIn() ?
+          <Link href="/About">About Us</Link>
+            :
+          <Link href="/About">About Us</Link>
+        }
+        </MenuItems>
+
       </Box>
 
       <Box

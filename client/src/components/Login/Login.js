@@ -3,7 +3,8 @@ import { useMutation } from '@apollo/react-hooks';
 import { Link } from "react-router-dom";
 import { LOGIN } from "../../utils/mutations"
 import Auth from "../../utils/auth";
-import { Container, Text, Box, Heading, FormControl, FormLabel, Input, Button } from "@chakra-ui/react";
+import "./login.css";
+import { Container, Text, Box, Heading, FormControl, FormLabel, Input, Button ,Center} from "@chakra-ui/react";
 
 function Login(props) {
   const [formState, setFormState] = useState({ email: '', password: '' })
@@ -29,7 +30,7 @@ function Login(props) {
   };
 
   return (
-    <Container>
+    /*<Container>
     <Box 
     padding="4"  
     bgGradient="linear(to-r,blue.900,gray.500,blue.900)" 
@@ -73,7 +74,72 @@ function Login(props) {
               </Button>
       </FormControl>
       </Box>
-    </Container>
+    </Container> */
+    //<Container>
+    <Center><Box className="maindiv"
+    padding="4"  
+    bgColor="white"
+    borderRadius="lg" 
+    color="black" 
+    boxShadow="dark-lg"
+    maxW="3xl">
+      
+        <div className="leftdiv">
+
+        </div>
+        <div className="rightdiv">
+        <Heading  color="black" as="h6" padding="3" align="center">Login</Heading>
+        <FormControl>
+              <FormLabel mt={4}
+              color="black">Email ID</FormLabel>
+              <Input type="email" placeholder="youremail@test.com"
+                  name="email"
+                  id="email"
+                  color="black"
+                  borderColor = "black"
+                  onChange={handleChange}/>
+              <FormLabel color="black" mt={4}>Password</FormLabel>
+              <Input placeholder="******" type="password"
+                  name="password"            
+                  id="pwd"
+                  color="black"
+                  borderColor = "black"
+                  onChange={handleChange} />
+              {
+              error ? 
+                <Container>
+                  <Text color="red" fontSize="sm">The provided credentials are incorrect</Text>
+                </Container> : null
+            }
+            <Button
+                mt={4}
+                colorScheme="blue"
+                type="submit"
+                width="100%"
+                outline="none"
+                onClick={handleFormSubmit}
+              >
+                Submit
+              </Button>
+              <Link to="/signup">
+              <Text 
+              mt={4}
+              color="blue"
+              fontSize="sm"
+              align="center">
+              Don’t have an Account? <strong>Signup</strong>
+              </Text>
+       
+      </Link>
+      </FormControl>
+
+        </div>
+      
+
+      </Box>
+      </Center>
+   // </Container>
+    
   );
 }
 

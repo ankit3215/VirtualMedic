@@ -34,7 +34,7 @@ function Appointment() {
     const CustomInput = ({ value, onClick }) => (
         <Input type="day" placeholder="mm/dd/yyy"
                 name="day"
-                color="white"
+                color="black"
                 onClick={onClick}
                 onChange={handleChange}
                 value={formState.day}/>
@@ -177,9 +177,10 @@ function Appointment() {
     <Container>
     <Box 
         padding="4"  
+        bgcolor="white"
         bgGradient="linear(to-r,blue.900,gray.500,blue.900)" 
         borderRadius="lg" 
-        color="white" 
+        color="black" 
         maxW="3xl"> 
       <Heading  color="white" as="h2" size="xl" fontSize={{ base: "16px", md: "20px", lg: "30px" }} padding="3">My Appointment</Heading>
      {
