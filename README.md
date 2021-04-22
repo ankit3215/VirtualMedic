@@ -3,6 +3,7 @@
 ## Description
 
 VirtualMedic is an application where you can create an account to schedule an appointment with a doctor. You login to the application, pick a date in the calendar, pick an available time and you will receive an email with a link to your video call with an available doctor.
+You can also check various Health articles, about medicines and diagnostics for your refernece.
 
 It is made with MERN Stack and Daily.co API for getting the room for meetings and using Chakra-UI for styling.
 
