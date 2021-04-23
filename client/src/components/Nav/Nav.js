@@ -140,32 +140,3 @@ const Nav = props => {
 export default Nav;
 
 
-// import React from "react"
-// import { Box, Text } from "@chakra-ui/react"
-// import "./Nav.css";
-// import Auth from "../../utils/auth"
-
-// export default function Logo(props) {
-//   return (
-//     <Box {...props}>
-//       <Text fontSize="lg" fontWeight="bold">
-//         Logo
-//       </Text>
-//     </Box>
-//   )
-// }
-
-
-// function Nav() {
-//  return (
-     
-//     <div className="topnav">
-
-            
-            
-//           <a href="#contact">Contact</a>
-//           <a href="#about">About</a>
-//         </div>
-//         )
-//     }
-// export default Nav

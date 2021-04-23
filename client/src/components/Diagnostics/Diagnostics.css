@@ -1,7 +1,4 @@
-   .row{
-    display: grid;
-    grid-template-columns:repeat(3, 1fr);
-}  
+
 .container{
     display: flexbox;
 
@@ -9,9 +6,9 @@
 }
 .cardib{
     display: grid;
-    width: 10cm;
-    height: 15cm;
+    width: auto;
+    height: auto;
 } 
 .card-img-top{
-    height: 8cm;
+    height: auto;
 }
