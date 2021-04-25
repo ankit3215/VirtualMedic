@@ -23,8 +23,8 @@ const Nav = props => {
       justify="space-between"
       wrap="wrap"
       padding="1.5rem"
-      bgColor="white"
-      color="black"
+      bgColor="gold"
+      color="purple"
       borderRadius="sm"
       {...props}
     >

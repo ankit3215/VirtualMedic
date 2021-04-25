@@ -7,7 +7,7 @@ import "./home.css";
 
 
 
-// fontSize={{ base: "20px", md: "34px", lg: "40px" }}padding="3" margin="0 0 20px 0"
+
 
   
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from "react";  //panel
 import {
   BrowserRouter as Router,
   Route,
@@ -27,6 +27,7 @@ import HealthArticles from "./components/HealthArticles/HealthArticles";
 import { StoreProvider } from "./utils/GlobalState";
 
 import "./App.css";
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"> </link>
 
 const client = new ApolloClient({
   request: (operation) => {
@@ -89,16 +90,16 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <div
+        <div className="bg"
           style={{
             backgroundImage: `url(${
               process.env.PUBLIC_URL +
-              "https://image.freepik.com/free-vector/white-background-with-blue-tech-hexagon_1017-19366.jpg"
+              "https://www.pixelstalk.net/wp-content/uploads/images1/HD-medicine-wallpapers-768x508.jpg"
             })`,
             backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-          }}
-        >
+            backgroundSize: "cover" ,
+            backgroundPosition: "center",
+            }}>
           <StoreProvider>
             <ChakraProvider>
               <Nav />
