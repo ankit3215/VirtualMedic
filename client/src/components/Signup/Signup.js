@@ -42,14 +42,16 @@ function Signup(props) {
       boxShadow="dark-lg"
       borderRadius="lg" 
       color="black"
-      maxW="3xl"> 
+      maxW="3xl"
+      bgColor="wheat"> 
+      
       
         <div className="leftdivi">
 
         </div>
 
         <div className="rightdivi">
-        <Heading  color="black" as="h6" padding="3" align="center">Signup</Heading>
+        <Heading  color="White" as="h6" padding="3" align="center">Signup</Heading>
       <FormControl>
               <FormLabel color="black">First Name</FormLabel>
               <Input type="firstName" placeholder="Your First Name"

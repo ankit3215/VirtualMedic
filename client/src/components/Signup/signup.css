@@ -1,5 +1,6 @@
 .container1{
     width: 60%;
+    background-color: aquamarine;
 }
 
 .maindivi{
@@ -8,6 +9,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     padding: 4%;
+    background-color: aqua;
 }
 .leftdivi{
     display: flex;
@@ -16,8 +18,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
+    background-color: black;
 }
 .rightdivi{
     width: 40%;
+    
 }

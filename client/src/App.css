@@ -9,6 +9,9 @@
 }
 
 .bg{
+    background-image: url(https://www.pixelstalk.net/wp-content/uploads/images1/HD-medicine-wallpapers-768x508.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
     background-size: cover;
-    background-image: -moz-repeating-radial-gradient();
 }

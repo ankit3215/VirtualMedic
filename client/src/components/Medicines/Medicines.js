@@ -50,7 +50,7 @@ function Medicines() {
             <SwiperSlide key={user.id} className="slide">
                 <div className="slide-content">
                     
-                    <h5><b>{user.username}</b></h5>
+                    <h5 className="username1"><b>{user.username}</b></h5>
                     <p className="user-testimonial">"<i>{user.testimonial}</i>"</p>
                 </div>
             </SwiperSlide>

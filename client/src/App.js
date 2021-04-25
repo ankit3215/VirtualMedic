@@ -90,16 +90,8 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <div className="bg"
-          style={{
-            backgroundImage: `url(${
-              process.env.PUBLIC_URL +
-              "https://www.pixelstalk.net/wp-content/uploads/images1/HD-medicine-wallpapers-768x508.jpg"
-            })`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover" ,
-            backgroundPosition: "center",
-            }}>
+        <div className="bg">
+          
           <StoreProvider>
             <ChakraProvider>
               <Nav />

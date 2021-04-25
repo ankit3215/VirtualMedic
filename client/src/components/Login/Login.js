@@ -78,7 +78,7 @@ function Login(props) {
     //<Container>
     <Center><Box className="maindiv"
     padding="4"  
-    bgColor="white"
+    bgColor="wheat"
     borderRadius="lg" 
     color="black" 
     boxShadow="dark-lg"
